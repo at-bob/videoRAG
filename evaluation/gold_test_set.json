@@ -1,0 +1,61 @@
+{
+    "answerable": [
+      {
+        "question": "What is the video mainly about?",
+        "timestamp": 12.0
+      },
+      {
+        "question": "Who is the main speaker?",
+        "timestamp": 5.0
+      },
+      {
+        "question": "What are the two approaches to computational problems?",
+        "timestamp": 516.0
+      },
+      {
+        "question": "What is another name for the token placement problem?",
+        "timestamp": 744.0
+      },
+      {
+        "question": "In which areas are solution spaces used?",
+        "timestamp": 946.0
+      },
+      {
+        "question": "What is PSPACE?",
+        "timestamp": 1080.0
+      },
+      {
+        "question": "What happens if one does not restrict the independent sets during the configuration to be not of the same size?",
+        "timestamp": 3047.0
+      },
+      {
+        "question": "What is the third rule?",
+        "timestamp": 3110.0
+      },
+      {
+        "question": "What happens if one does not restrict the independent sets during the configuration to be not of the same size?",
+        "timestamp": 3047.0
+      },
+      {
+        "question": "Is addition and removal equivalent to token jumping?",
+        "timestamp": 3141.0
+      }
+    ],
+    "unanswerable": [
+      {
+        "question": "What year was the company founded?"
+      },
+      {
+        "question": "Does the speaker talk about climate change?"
+      },
+      {
+        "question": "Who is Micael Jordan?"
+      },
+      {
+        "question": "How old is the speaker?"
+      },
+      {
+        "question": "What is life?"
+      }
+    ]
+  }  
