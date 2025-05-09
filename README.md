@@ -1,6 +1,4 @@
-===================================================
-                VideoRAG - Multimodal Video Retrieval System
-===================================================
+VideoRAG - Multimodal Video Retrieval System
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline for video content. 
 It enables natural language queries to retrieve relevant video moments using 
@@ -9,10 +7,9 @@ transcripts, visual keyframes, and OCR-extracted slide text embeddings.
 📌 GitHub Repository: https://github.com/at-bob/videoRAG
 
 
-==========================================
 📁 Project Structure
-==========================================
 
+```plaintext
 VideoRAG/
 ├── README.md
 ├── requirements.txt
@@ -28,11 +25,9 @@ VideoRAG/
 │   ├── gold_test_set.json # Test set with answerable and unanswerable queries
 │   └── evaluate_retrieval.py # Evaluation script for model benchmarking
 └── streamlit.py           # Interactive UI using Streamlit
+```
 
-
-==========================================
 🚀 Setup & Installation
-==========================================
 
 1. Clone the repository:
    git clone https://github.com/at-bob/videoRAG.git
@@ -53,9 +48,7 @@ VideoRAG/
    export CPPFLAGS="-I/opt/homebrew/opt/openssl/include"
 
 
-==========================================
 📚 Data Processing Pipeline
-==========================================
 
 1. **Extract Frames:**
    Run: `python src/data_processing/extract_frames.py`
@@ -77,9 +70,8 @@ VideoRAG/
    Run: `python src/data_processing/ocr_frame_texts.py`
    - Extracts slide text from frames using Tesseract OCR and generates embeddings.
 
-==========================================
 🔍 Retrieval Methods
-==========================================
+
 
 - FAISS (Dense Vector Similarity Search)
 - PgVector (PostgreSQL Vector Search)
@@ -92,7 +84,6 @@ To run the evaluation:
 ```bash
 python evaluation/evaluate_retrieval.py
 ```
-==========================================
 🎮 Streamlit Interactive UI
 Launch the interactive interface:
 
@@ -105,7 +96,6 @@ Select one of the retrieval models.
 
 View the retrieved timestamp and system confidence.
 
-==========================================
 📈 Evaluation Metrics
 Top-1 Accuracy: Correct retrievals within a ±10 second tolerance.
 
@@ -114,5 +104,3 @@ Rejection Quality: Ability to reject unanswerable queries.
 Latency: Average retrieval time per query.
 
 Evaluation Results can be reviewed in the terminal after running the evaluation script.
-
-==========================================
