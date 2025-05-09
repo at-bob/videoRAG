@@ -8,25 +8,6 @@ DB_URL = "postgresql://adamtai@localhost/postgres"
 # Load the same embedding model used earlier
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 
-# User query
-# query = input("🔍 Enter your question: ")
-# query_embedding = model.encode([query])[0].tolist()
-
-# Connect to the DB and run the vector similarity query
-# engine = create_engine(DB_URL)
-# with engine.connect() as conn:
-#     results = conn.execute(text("""
-#         SELECT timestamp, embedding <-> (:query_vector)::vector AS score
-#         FROM text_embeddings
-#         ORDER BY embedding <-> (:query_vector)::vector
-#         LIMIT 5
-#     """), {"query_vector": query_embedding}).fetchall()
-
-# Display results
-# print("\n🧠 Top matching timestamps:")
-# for ts, score in results:
-#     print(f"⏱️ {ts:.2f}s — Similarity: {score:.4f}")
-
 def run_pgvector_query(query, return_if_none=False):
     from sqlalchemy import create_engine, text
     from sentence_transformers import SentenceTransformer
